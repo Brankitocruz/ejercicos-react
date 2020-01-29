@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: aliceblue;
 
 }
 
@@ -23,6 +24,11 @@
   font-size: large;
   margin-top: -200px;
   color: white;
+  
+}
+
+.texto-principal {
+  flex-direction: 10px;
 }
 
 @keyframes App-logo-spin {
