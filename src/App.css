@@ -27,8 +27,11 @@
   
 }
 
-.texto-principal {
-  flex-direction: 10px;
+.boton{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes App-logo-spin {

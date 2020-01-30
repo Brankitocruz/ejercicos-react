@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/'
 
 class App extends Component {
   render() {
@@ -20,6 +21,10 @@ class App extends Component {
           <input></input>
           <label>Comentario 🖖</label>
           <input></input>
+          <div className="boton">
+          <button><a herf ="">Galeria</a></button>
+          
+          </div>
         </form>
       </div>
     );
