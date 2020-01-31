@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './components/'
+import './imagenes/index.js';
+import imagen1 from './assets/imagen1.jpg';
+import imagen2 from './assets/imagen2.jpg';
+import imagen3 from './assets/imagen3.jpg';
+
+
 
 class App extends Component {
   render() {
@@ -22,8 +27,12 @@ class App extends Component {
           <label>Comentario 🖖</label>
           <input></input>
           <div className="boton">
-          <button><a herf ="">Galeria</a></button>
-          
+          <button><a herf ="imagenes/index.js">Galeria</a></button>
+          <img src={imagen1} className="galeria" alt="" />
+          <img src={imagen2} className="galeria" alt="" />
+          <img src={imagen3} className="galeria" alt="" />
+
+
           </div>
         </form>
       </div>
