@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import imagenes from '../assets';
-/*import logo from './logo.svg';
-import './App.css';*/
+import './styles.css';
 
 function galeria(props) {
     console.log(props);
 
 return  (
-    <div className="galeria">
+    <div className="galeria-img">
         {
             props.images.map((imageURL) => {
-                <img src={imageURL} alt="" />
+                <img class= "galeria-img" src={imageURL} alt="" />
             })
         }
         
