@@ -1,17 +1,17 @@
-/*import React, { Component } from 'react';
+import React, { Component } from 'react';
 import './styles.css';
 
 
-function boton(props) {
+function Boton(props) {
     console.log(props);
 
 return  (
-   <div className="boton">
+   <div className="contenedorboton">
 
-        <a href="https://vinkula.com">Soy un botón</a>
+        <button className="boton" href="">CV</button>
 
     </div>
 )
 
-
-export default boton;*/
+}
+export default Boton;
