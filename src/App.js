@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
+import Logo from './componets/logo';
+
 import './imagenes/index.js';
+
 import imagen1 from './assets/imagen1.jpg';
 import imagen2 from './assets/imagen2.jpg';
 import imagen3 from './assets/imagen3.jpg';
+
 import wolox from './assets/wolox.png';
 import empujar from './assets/empujar.png';
 
-import './components-button/styles.css';
 import Boton from './components-button';
+
+
+
 
 
 class App extends Component {
@@ -16,8 +22,12 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>💙BIENVENIDOS 💛A MI PERFIL💙!!!</h2>
+
         </div>
+
+        <h2>💙BIENVENIDOS 💛A MI PERFIL💙!!!</h2>
+        <Logo></Logo>
+        
         <p className="App-intro">
           Soy una persona que le gusta aprender cosas nuevas y ser parte de grandes desafíos, responsable y perseverante. Estoy buscando un espacio de trabajo en donde pueda desarrollar estas cualidades y los conocimientos necesarios para potenciar mis estudios.
         </p>

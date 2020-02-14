@@ -1,0 +1,77 @@
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divPadre{
+    height: 100%;
+}
+
+.principal {
+    background: black;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.rojoAtras{
+width: 250px;
+height: 250px;
+animation: App-escudo infinite 2.5s linear;
+position: absolute;
+left: 0;
+    opacity: 0;
+    transition: all .5s ease;   
+
+}
+
+
+.rojoAdelante{
+    width: 250px;
+    height: 250px;
+    animation: App-escudo infinite 2.5s linear;
+    position: absolute;
+    left: 0;
+    transition: all .5s ease;   
+
+    
+}
+
+.violetaAdelante{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    transition: all .5s ease;
+}
+    .violetaAtras{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        transition: all .5s ease;   
+    }
+.violetaAdelante:hover ~ .violetaAtras,
+.violetaAtras:hover{
+    z-index: 1;
+    opacity: 1;
+}
+.rojoAdelante:hover ~ .rojoAtras,
+.rojoAtras:hover{
+    z-index: 1;
+    opacity: 1;
+}
+@keyframes App-escudo {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
